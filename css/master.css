@@ -1,0 +1,114 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+
+/*for image*/
+body {
+  background-image: url("../images/back.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#464646;
+
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+}
+
+body:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, black, white);
+  opacity: .6;
+}
+
+/*nav bar*/
+
+nav img {
+  width: 24px;
+  margin: 10px;
+}
+
+nav .left-nav {
+  position: absolute;
+}
+
+nav .right-nav {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+nav .nav-txt {
+  position: absolute;
+  top: 15px;
+}
+
+nav .sign-up, .log-in{
+  position: absolute;
+}
+
+nav .log-in {
+  right: 10px;
+}
+
+nav .nav-txt {
+  letter-spacing: -0.04em;
+  font-size: 12px;
+}
+
+nav .log-in .nav-txt {
+  right: 20px;
+  width: 100%;
+}
+
+nav .sign-up {
+  right: 65px;
+}
+
+nav .sign-up .nav-txt {
+  right: 20px;
+  width: 130%;
+}
+
+
+
+@media only screen and (min-width: 767px) {
+  .nav-txt {
+    display: none;
+  }
+
+  nav .sign-up {
+    right: 50px;
+  }
+}
+
+
+/*center*/
+
+.logo-img img {
+  width: 300px;
+  position: absolute;
+  top: 60px;
+  left: 35%;
+}
+
+@media only screen and (max-width: 767px) {
+  .logo-img img {
+    width: 150px;
+    position: absolute;
+    top: 60px;
+    left: 30%;
+  }
+}
+
+.slogan {
+  text-transform: capitalize;
+  color: white;
+}
